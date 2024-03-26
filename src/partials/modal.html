@@ -1,0 +1,69 @@
+<div class="backdrop" data-modal>
+  <div class="modal__order-service">
+    <button class="modal__close-btn" type="button" closeModal>
+      <span class="material-symbols-outlined modal__close-icon"> close </span>
+    </button>
+    <p class="modal__appeal">Консультація</p>
+    <p class="modal__appeal-2">
+      Менеджер зателефонує тобі найближчим часом, відповість на запитання та розкаже деталі
+    </p>
+    <form action="#" class="modal__form">
+      <label class="modal__form-field">
+        Ім’я
+        <span class="modal__form-wrapper">
+          <input class="modal__form-input" type="text" name="user-name" minlength="3" required />
+          <span class="material-symbols-outlined modal__form-icon"> person </span>
+        </span> </label
+      ><label class="modal__form-field"
+        >Телефон
+        <span class="modal__form-wrapper">
+          <input
+            class="modal__form-input"
+            type="tel"
+            name="user-phone"
+            minlength="10"
+            pattern="[+0-9]+"
+            required
+          />
+          <span class="material-symbols-outlined modal__form-icon"> call </span>
+        </span> </label
+      ><label class="modal__form-field"
+        >Почта
+        <span class="modal__form-wrapper">
+          <input class="modal__form-input" type="email" name="user-mail" required />
+          <span class="material-symbols-outlined modal__form-icon"> mail </span>
+        </span> </label
+      ><label class="modal__form-field"
+        >Комментар
+        <textarea
+          name="user-message"
+          class="modal__form-text"
+          placeholder="Введіть текст"
+        ></textarea>
+      </label>
+
+      <label class="modal__form-checkbox">
+        <input
+          type="checkbox"
+          class="modal__form-check visually-hidden"
+          name="user-polisy"
+          required
+        />
+        <span class="material-symbols-outlined modal__form-icon-checkbox"> done </span>
+        <span class="modal__form-container">
+          Я погоджуюся на обробку моїх персональних даних у маркетингових i комерційних цілях
+          відповідно до
+          <a href="https://wwwwwwwww.jodi.org/" class="modal__form-policy-link" target="_blank"
+            >Політики конфіденційності</a
+          >
+          та
+          <a href="http://zoomquilt.org/" class="modal__form-policy-link" target="_blank"
+            >Умов користування</a
+          >
+        </span>
+      </label>
+
+      <button class="modal__form-submit-btn" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>

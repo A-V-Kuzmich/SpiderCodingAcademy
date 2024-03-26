@@ -1,0 +1,227 @@
+.header {
+  background-color: $primary-background-color;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.header-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.header-nav-list,
+.header-order-button {
+  display: none;
+}
+.hamburger {
+  position: relative;
+}
+
+//-------------tablet------------------------
+@media screen and (min-width: 768px) {
+  .header-order-button {
+    display: block;
+  }
+  .header-btn-container {
+    display: flex;
+    align-items: center;
+  }
+  .header-order-button {
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    background-color: $primary-white-color;
+    color: $accent-color;
+    transition: $modal-time $modal-form;
+    &:focus,
+    &:hover {
+      color: #fff;
+      background-color: $accent-color;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+  .header-mobile-button {
+    margin-left: 40px;
+  }
+}
+//--------------desktop---------------------
+@media screen and (min-width: 1366px) {
+  .header-mobile-button {
+    display: none;
+  }
+  .button-heder-menu {
+    min-width: 159px;
+    min-height: 55px;
+  }
+  .header-nav-list {
+    display: flex;
+    margin-left: 114px;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-nav-link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    transition: $modal-time $modal-form;
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      color: $accent-color;
+    }
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  cursor: pointer;
+
+  &_name {
+    &-container {
+      margin-left: 5px;
+      transform: translateY(3px);
+    }
+    color: #fff;
+    &-color {
+      color: $accent-color;
+      margin-right: -5px;
+    }
+  }
+  &__img {
+    width: 50px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+
+    &_name {
+      &-color {
+        margin-right: -9px;
+      }
+    }
+    &__img {
+      width: 70px;
+    }
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 20px;
+
+    &_name {
+      &-container {
+        margin-left: 15px;
+        transform: translateY(6px);
+      }
+      &-color {
+        margin-right: -9px;
+      }
+    }
+    &__img {
+      width: auto;
+    }
+  }
+}
+
+//-----------mobile menu----------------
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $backdrop;
+  overflow: auto;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity $modal-time $backdrop-transition, visibility $modal-time $backdrop-transition;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+//----------------------------
+.mobile-menu-logo {
+  position: relative;
+  z-index: 11;
+  color: $primary-white-color;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-item {
+  &:hover,
+  &:focus {
+    & > .mobile-link {
+      color: $accent-color;
+    }
+  }
+}
+.mobile-link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+  text-decoration: none;
+  transition: $modal-time $modal-form;
+}
+.mobile-header-container {
+  position: relative;
+  transform: translateX(-50%);
+  top: 110px;
+  left: 50%;
+}
+@media screen and (min-width: 480px) {
+  .mobile-header-container {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 160px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-mob-menu {
+    display: none;
+  }
+  .mobile-link {
+    font-size: 26px;
+  }
+}
