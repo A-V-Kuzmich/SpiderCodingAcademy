@@ -7,6 +7,8 @@
   --transition-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
 }
+$transition-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+$time: 550ms;
 
 $mobile: 480px;
 $tablet: 768px;
@@ -17,6 +19,7 @@ $desctop: 1366px;
 // $desctop: 1366px;
 
 $primary-background-color: #112a3e;
+$primary-background-color-white: #f5f5f5;
 $accent-color: #1cc89f;
 $text-color: #fff;
 $primary-white-color: #ffffff;
