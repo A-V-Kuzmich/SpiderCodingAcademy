@@ -1,41 +1,21 @@
-:root {
-  --accent-color: #1cc89f;
-  --modal-order: #102b3e;
-  --text-color: #fff;
-  --border-default: #fff;
-  --border-active: var(--accent-color);
-  --transition-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-  --time: 250ms;
-}
 $transition-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-$time: 550ms;
+$time: 250ms;
 
 $mobile: 480px;
 $tablet: 768px;
 $desctop: 1366px;
-
-// $mobile: 480px;
-// $tablet: 768px;
-// $desctop: 1366px;
 
 $primary-background-color: #112a3e;
 $primary-background-color-white: #f5f5f5;
 $accent-color: #1cc89f;
 $text-color: #fff;
 $primary-white-color: #ffffff;
-
-// $accent-color: #ff6b09;
+$border-default: #fff;
+$modal-order: #102b3e;
 
 $primary-black-color: #111518;
 $primary-text-color: #b9b9b9;
-$secondary-text-color: #3d3d3d;
-$secondary-bg-color: #f1f1f1;
 $backdrop: rgba(17, 21, 24, 0.9);
-
-//shadows
-
-$hero-shadow-color: rgba(0, 0, 0, 0.04);
-$cards-shadow-color: rgba(0, 0, 0, 0.1);
 
 //transition
 $backdrop-transition: cubic-bezier(0.4, 0, 0.2, 1);
